@@ -1,7 +1,65 @@
-POST http://127.0.0.1:8000/api/menu
+GET https://prod.tabyeats.com/api/menu
+
+###
+GET https://prod.tabyeats.com/api/chowly
+
+###
+
+POST http://127.0.0.1:8000/api/order
 content-type: application/json
 
 {
-    "API_KEY": "4b5559f8b264e776",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+    "order": {
+  "customer": {
+    "id": "078eb998-3b05-4ae3-8b5c-9063124338cd",
+    "name": "Jane J. Doe",
+    "phone": "5555555555",
+    "email": "jjdoe@example.com",
+    "address1": "1234 S Main Street",
+    "address2": "Suite 180",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10001",
+    "cross_street": "Rodeo Drive",
+    "special_instructions": "Doorman will let you up."
+  },
+  "info": {
+    "id": "4f20a834-d67b-4c76-bb04-2d79fb4c71f7",
+    "scheduled_time": null,
+    "pickup_code": "AZ45jd9pQckJf078",
+    "service_type": "Pick-Up",
+    "payment_is_cash": false,
+    "payment_type": "credit",
+    "tip_payment_is_cash": true,
+    "tip_payment_type": "cash",
+    "subtotal": "28.75",
+    "delivery_charge": "3.75",
+    "sales_tax": "2.87",
+    "tip": "4.59",
+    "total": "38.21",
+    "coupon_description": "New York Restaurant Coupons - neighborhood discount",
+    "coupon_amount": "1.75"
+  },
+  "items": [
+    {
+      "id": "586240980",
+      "name": "Large - Brooklyn Style Pizza",
+      "external_id": "A8271710",
+      "price": "26.42",
+      "quantity": "1",
+      "notes": "Please do not include the default Ranch dip.",
+      "mods": [
+        {
+          "id": "bc06e801-17f5-4350-a914-6a10bc0192f1",
+          "name": "Pepperoni - Slices",
+          "category": "Toppings - MEATS",
+          "external_id": "A8271711",
+          "price": "2.33",
+          "quantity": "1"
+        }
+      ]
+    }
+  ]
+}
+
 }
