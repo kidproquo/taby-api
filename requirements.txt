@@ -1,0 +1,5 @@
+sh
+apscheduler
+flask
+gunicorn
+requests

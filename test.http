@@ -1,0 +1,7 @@
+POST http://127.0.0.1:8000/api/menu
+content-type: application/json
+
+{
+    "API_KEY": "4b5559f8b264e776",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
