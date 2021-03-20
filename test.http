@@ -63,3 +63,56 @@ content-type: application/json
 }
 
 }
+
+###
+GET https://api.chowlyinc.com/api/toos/v2/menus
+content-type: application/json
+api-key: 4b5559f8b264e776
+
+###
+POST https://api.chowlyinc.com/api/toos/v2/orders
+content-type: application/json
+api-key: 4b5559f8b264e776
+
+{
+  "info": {
+        "id": "yeuiywuyw4",
+        "service_type": "Pick-Up",
+        "payment_is_cash": false,
+        "payment_type": "credit",
+        "tip_payment_is_cash": false,
+        "tip_payment_type": "credit",
+        "subtotal": "20.00",
+        "delivery_charge": "3.75",
+        "sales_tax": "1.00",
+        "tip": "3.00",
+        "total": "24.00"
+  },
+  "customer": {
+    "id": "prince@dsldkj.com",
+    "name": "Zaphod",
+    "email": "prince@dsldkj.com",
+    "phone": "8327816112"
+  },
+  "items": [
+    {
+            "price": "12.95",
+            "name": "Fried Large Gulf Shrimp",
+            "id": "f2b5cb1b-33f7-4984-b537-86e617231b5c",
+            "quantity": "2",
+            "external_id": "132462451",
+            "mods": [
+              {
+                "id": "41b2e0d9-91a3-4d1f-a8bc-612b16ded89c",
+                "name": "Large (12)",
+                "price": "3.00",
+                "category": "Large Gulf Shrimp Size",
+                "quantity": "1"
+              }
+            ]
+
+    }
+  ]
+
+  
+}
